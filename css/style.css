@@ -1,0 +1,750 @@
+
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #424242;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #387ed1;
+    text-decoration-line: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.narrow {
+    width: 100%;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: #ffffff;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #f0f0f0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.navbar-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo-link {
+    display: block;
+}
+
+.logo {
+    width: 130px;
+    height: 17px;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+    margin-left: 36px;
+}
+
+.nav-link {
+    display: inline-block;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 70px;
+}
+
+.nav-link:hover {
+    color: #387ed1;
+}
+
+.section-heading {
+    color: #424242;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.text-link {
+    color: #387ed1;
+    font-weight: 500;
+}
+
+.text-link:hover {
+    color: #2868b5;
+}
+
+.arrow {
+    display: inline;
+}
+
+.button {
+    display: inline-block;
+    background-color: #387ed1;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.button:hover {
+    background-color: #2f6cb8;
+}
+
+.hero {
+    padding-top: 130px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.hero-heading {
+    color: #424242;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 720px;
+    margin-top: 12px;
+    color: #424242;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.hero .button {
+    margin-top: 28px;
+}
+
+.trust {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.trust-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trust-copy {
+    width: 42%;
+}
+
+.trust-visual {
+    width: 54%;
+}
+
+.trust-block {
+    margin-bottom: 32px;
+}
+
+.trust-title {
+    color: #424242;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.trust-text {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.ecosystem-image {
+    width: 100%;
+    height: auto;
+}
+
+.ecosystem-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.ecosystem-item {
+    margin-right: 28px;
+    margin-left: 28px;
+}
+
+.kite-banner {
+    background-color: #f6fbff;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-bottom: 90px;
+}
+
+.kite-banner-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kite-logo {
+    width: 150px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.kite-text {
+    width: 62%;
+    color: #424242;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    padding-right: 20px;
+    padding-left: 24px;
+}
+
+.kite-art {
+    width: 140px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+
+.pricing {
+    padding-bottom: 90px;
+}
+
+.pricing-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing-copy {
+    width: 40%;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 56%;
+}
+
+.price-card {
+    width: 31%;
+    text-align: center;
+}
+
+.price-image {
+    width: 120px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 12px;
+}
+
+.price-caption {
+    color: #666666;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.pricing-more {
+    margin-top: 28px;
+    padding-left: 44%;
+}
+
+
+.education {
+    padding-bottom: 80px;
+}
+
+.education-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-visual {
+    width: 42%;
+}
+
+.education-image {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+}
+
+.education-copy {
+    width: 48%;
+}
+
+.education-link-line {
+    margin-top: 12px;
+}
+
+.education-second {
+    margin-top: 28px;
+}
+
+.open-account {
+    padding-top: 40px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.open-heading {
+    color: #424242;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.open-text {
+    margin-top: 14px;
+    margin-bottom: 24px;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+.footer {
+    background-color: #fbfbfb;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #eeeeee;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-brand {
+    width: 240px;
+    flex-shrink: 0;
+}
+
+.footer-logo {
+    width: 140px;
+    height: auto;
+    margin-bottom: 18px;
+}
+
+.copyright {
+    color: #666666;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.social-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.social-item {
+    margin-right: 14px;
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.social-svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: #424242;
+    fill: #424242;
+}
+
+.social-link:hover .social-svg {
+    color: #387ed1;
+    fill: #387ed1;
+}
+
+.instagram-svg .instagram-outline,
+.instagram-svg .instagram-lens {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.instagram-svg .instagram-flash {
+    fill: currentColor;
+}
+
+.social-line {
+    width: 90%;
+    margin-top: 16px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-style: solid;
+    border-top-color: #e0e0e0;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.store-badges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.store-link {
+    display: block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.store-badge {
+    height: 36px;
+    width: auto;
+}
+
+/*
+    CSS GRID
+    Four equal columns: Account, Support, Company, Quick links.
+    grid-template-columns says how many columns and how wide each one is.
+    1fr means "one equal share of the free space".
+*/
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 30px;
+    width: 78%;
+}
+
+.footer-heading {
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.footer-item {
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.footer-item:hover {
+    color: #387ed1;
+}
+
+/* .legal {
+    margin-top: 40px;
+}
+
+.legal-text {
+    color: #9b9b9b;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.legal-link {
+    color: #387ed1;
+    font-size: 11px;
+}
+
+.legal-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.legal-item {
+    margin-right: 8px;
+}
+
+.bottom-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    padding-top: 10px;
+}
+
+.bottom-item {
+    margin-right: 14px;
+    margin-bottom: 8px;
+}
+
+.bottom-link {
+    color: #9b9b9b;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.bottom-link:hover {
+    color: #387ed1;
+} */
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 900px) {
+    .menu-button {
+        display: inline-block;
+        color: #666666;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #eeeeee;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .menu-checkbox:checked ~ .nav-menu {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10px;
+        padding-bottom: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .nav-link {
+        line-height: 42px;
+    }
+
+    .trust-row,
+    .pricing-row,
+    .education-row,
+    .kite-banner-inner,
+    .footer-top {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .trust-copy,
+    .trust-visual,
+    .pricing-copy,
+    .pricing-cards,
+    .education-visual,
+    .education-copy,
+    .kite-text,
+    .footer-brand,
+    .footer-grid {
+        width: 100%;
+    }
+
+    .trust-visual,
+    .pricing-cards,
+    .education-copy {
+        margin-top: 36px;
+    }
+
+    .kite-logo,
+    .kite-art {
+        margin-bottom: 12px;
+    }
+
+    .kite-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .pricing-more {
+        padding-left: 0;
+    }
+
+    .price-card {
+        width: 32%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 36px;
+    }
+
+    .hero-heading {
+        font-size: 32px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 560px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-card {
+        width: 70%;
+        margin-bottom: 24px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ecosystem-links {
+        flex-direction: column;
+    }
+
+    .ecosystem-item {
+        margin-bottom: 10px;
+    }
+}
